@@ -1,0 +1,131 @@
+body .categories .col-sm
+{
+	font-family: 'bodoni_11bold_italic';
+	text-align: center;
+	font-size: 30px;
+	padding: 15px;
+}
+
+body #bodycss .row h2
+{
+	padding-bottom: 35px;
+}
+
+body .categories .row:last-child
+{
+	padding-bottom: 35px;
+}
+
+body #full_size_container
+{
+	background-color: lightgrey;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+body .progress_row
+{
+	text-align: center;
+}
+
+body #bodycss li
+{
+	display: inline;
+	padding-right: 50px;
+	font-size: 25px;
+}
+
+body #bodycss ul
+{
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+body #bodycss .col-4 h3
+{
+	text-align: center;
+}
+
+#bodycss h1
+{
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+/* Job with the table */
+
+body .categories 
+{
+	text-align: center;
+	width: 50%;
+}
+
+@media (max-width: 992px)
+{
+	footer
+	{
+		font-size: 40px;
+	}
+	footer .col-xs-12
+	{
+		padding-bottom: 25px;
+	}
+	body
+	{
+		font-size: 50px;
+	}
+	body h1, h2
+	{
+		font-size: 70px;
+	}
+	body .categories
+	{
+		font-size: 50px;
+	}
+}
+
+@media (min-width: 992px)
+{
+	body .container-fluid
+	{
+		padding-left: 130px;
+		padding-right: 130px;
+	}
+}
+
+/* 1 zadanie */
+
+/*li:nth-child(odd)
+{
+	font-size: 10px;
+	color: red;
+}
+
+li
+{
+	color: blue;
+}
+*/
+
+/* 2 zadanie */
+
+/*li:nth-child(4n - 2), li:nth-child(4n + 1)
+{
+	font-size: 10px;
+	color: red;
+}
+
+li
+{
+	color: blue;
+}*/
+
+/* 3 zadanie */
+
+/*li:nth-last-child(1), li:nth-last-child(2), li:nth-last-child(3)
+{
+	font-size: 10px;
+	color: red;
+}
+*/

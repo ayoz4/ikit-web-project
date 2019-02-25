@@ -1,0 +1,28 @@
+@font-face
+{
+    font-family: 'bodoni_11bold_italic';
+    src: url('fonts/bodoni-11-bold-italic/bodoni-11-bold-italic-webfont.woff2') format('woff2'),
+         url('fonts/bodoni-11-bold-italic/fonts/bodoni-11-bold-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face 
+{
+    font-family: 'great_vibesregular';
+    src: url('fonts/greatvibes-regular/greatvibes-regular-webfont.woff2') format('woff2'),
+         url('fonts/greatvibes-regular/greatvibes-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'bodoni_96italic';
+    src: url('fonts/bodoni-96-italic/bodoni-96-book-italic-webfont.woff2') format('woff2'),
+         url('fonts/bodoni-96-italic/bodoni-96-book-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

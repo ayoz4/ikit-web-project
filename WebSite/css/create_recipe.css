@@ -1,0 +1,65 @@
+#create_recipe
+{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#create_recipe h1
+{
+	text-align: center;
+	font-family: 'great_vibesregular';
+}
+
+#create_recipe .from-group:last-child
+{
+	text-align: center;
+}
+
+body #create_recipe
+{
+	font-family: 'bodoni_96italic';
+}
+
+body #create_recipe .form-group:last-child
+{
+	text-align: center;
+}
+
+#footer
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+@media (max-width: 992px)
+{
+	footer
+	{
+		font-size: 40px;
+	}
+	footer .col-xs-12
+	{
+		padding-bottom: 25px;
+	}
+	#create_recipe
+	{
+		font-size: 70px;
+	}
+	#create_recipe button
+	{
+		font-size: 50px;
+	}
+	#create_recipe h1
+	{
+		font-size: 70px;
+	}
+}
+
+@media (min-width: 992px)
+{
+	body .container-fluid
+	{
+		padding-left: 130px;
+		padding-right: 130px;
+	}
+}

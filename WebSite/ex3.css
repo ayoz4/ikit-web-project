@@ -1,0 +1,90 @@
+#wrapper
+{
+	position: relative;
+}
+
+#header
+{
+	width: 300px;
+	height: 100px;
+	background: yellow;
+	position: absolute;
+	left: 40%;
+}
+
+#content
+{
+	width: 300px;
+	height: 300px;
+	background: red;
+	position: relative;
+	float: left;
+}
+
+#menu
+{
+	width: 150px;
+	height: 150px;
+	background: purple	;
+	position: absolute;
+	right: 24%;
+	bottom: 24%;
+}
+
+#footer
+{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	position: absolute;
+	right: 33%;
+	bottom: 33%;
+}
+
+a
+{
+	position: fixed;
+	font-size: 50px;
+	right: 1%;
+	bottom: 1%;
+	text-decoration: none;
+	z-index: 1;
+}
+
+#wrapper1
+{
+	position: relative;
+	padding-top: 500px;
+}
+
+#content1
+{
+	width: 300px;
+	height: 500px;
+	background: red;
+	position: relative;
+}
+
+#menu1
+{
+	width: 150px;
+	height: 150px;
+	background: purple;
+	height: 150px;
+	float: left;
+}
+
+#footer1
+{
+	width: 200px;
+	height: 230px;
+	background: blue;
+	/*float: left;*/
+}
+
+#test
+{
+	height: 25px;
+	background: green;
+	lear: both;			/*Прижмется справа от content1*/
+}

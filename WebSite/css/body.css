@@ -1,0 +1,32 @@
+#bodycss .col-4
+{
+	text-align: right;
+	padding-right: 17px;
+}
+
+#bodycss h1
+{
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+body .content_recipe
+{
+	font-size: 17px;
+	padding-bottom: 50px;
+	font-family: 'bodoni_11bold_italic';
+}
+
+body .content_title h3
+{
+	text-align: right;
+	padding-top: 20px;
+}
+
+body #bodycss .col-6
+{
+	background-color: lightgrey;
+	border-radius: 10px;
+	font-family: 'bodoni_96italic';
+}

@@ -1,0 +1,128 @@
+body #body_container h1
+{
+	font-size: 70px;
+}
+
+body
+{
+	font-family: 'great_vibesregular';
+}
+
+#header_container .col-sm
+{
+	text-align: center;
+	display: inline-block;
+}
+
+#body_container .col-sm
+{
+	text-align: center;
+}
+
+header a
+{
+	color: black;
+}
+
+header
+{
+	font-family: 'bodoni_11bold_italic';
+}
+
+.navbar 
+{
+	background-color: white;
+	color: black;
+	text-decoration: none;
+}
+
+#body_container
+{
+	padding-top: 50px;
+}
+
+#dish_row
+{
+	padding-top: 30px;
+}
+
+#body_content a
+{
+	display: inline-block;
+	text-align: center;
+	padding-right: 50px;
+	justify-content: start;
+}
+
+#body_container
+{
+	width: 800px;
+	padding-bottom: 50px;
+}
+
+#body_content
+{
+	padding-top: 50px;
+}
+
+#recipe_header
+{
+	padding-top: 15px;
+}
+
+#footer
+{
+	text-align: center;
+	background-color: lightgray;
+}
+
+#footer .container
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+/*@media (min-width: 800px)
+{
+	#body_container
+	{
+		width: 60%;
+	}
+	#header_container
+	{
+		width: 75%;
+	}
+}*/
+
+/*@media (max-width: 992px)
+{
+	#body_container
+	{ 
+		width: 100% !important; 
+	}
+	#header_container
+	{
+		font-size: 50px;
+	}
+	h1
+	{
+		font-size: 70px;
+	}
+	#body-content
+	{
+		padding-right: 30px;
+	}
+}
+
+/*@media (max-width: 1725px)
+{
+	#body_container
+	{
+		width: 100%;
+	}
+	body
+	{
+		width: 100%;
+	}
+}*/
+
