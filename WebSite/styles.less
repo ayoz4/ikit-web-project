@@ -1,7 +1,10 @@
-@base-color: black;
+.randomColor() {
+	@randomColor: `Math.floor(Math.random()*16777215).toString(16)`;
+	@colorHex: e(@randomColor);
+	@color: ~"#@{colorHex}";
+}
 
 body {
-	background-color: @base-color;
-	width: 300px;
-	height: 700px;
+	.randomColor();
+	background-color: @color;
 }

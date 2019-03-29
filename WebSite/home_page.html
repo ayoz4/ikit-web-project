@@ -43,8 +43,8 @@
 
 	<div class="container-fluid" id="bodycss">
 		<div class="row"><div class="col-xs-0 col-sm-0 col-md-0 col-lg-2"></div><div class="col-3"><h1>Home</h1></div><div class="col-8"></div></div>
-			<script src="jsLab.js"></script>
-			<!--<script src="jsLab2.js"></script>-->
+			<!--<script src="jsLab.js"></script>-->
+			<script src="jsLab2.js"></script>
 		<div class="row"><div class="col-4"></div><div class="col-4"><h3><u>Navigation</u></h3></div><div class="col-4"></div></div>
 		<ul>
 			<li><a href="#1" onclick="alert("asd")">Categories</a></li>
@@ -98,8 +98,9 @@
 
 	<div class="container-fluid" id="full_size_container">
 		<div class="row">
-			<div class="col-sm">
-				<img src="image1.jpg">
+			<script type="changer.js"></script>
+			<div class="col-sm" id="firstGroup" onclick="swap()">
+				<img src="image1.jpg" id="myImage1">
 			</div>
 			<div class="col-sm">
 				<img src="image1.jpg">
@@ -109,6 +110,8 @@
 			</div>
 		</div>
 	</div>
+
+	
 
 	<!--<div class="container" id="body_container">
 		<div class="container" id="recipe_header">
