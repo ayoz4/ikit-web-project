@@ -3,16 +3,13 @@
     <head>
     </head>
     <body>
-        <div id="main">
-            <div class='child' onclick="deleteElement(1)" name='1'>1<button>delete</button></div>
-            <div class='child' onclick="deleteElement(2)" name='2'>2<button>delete</button></div>
-            <div class='child' onclick="deleteElement(3)" name='3'>3<button>delete</button></div>
-        </div>
+        <div id="main"></div>
         <div style="padding-top: 15px" onclick="addElement()">
             <button>add +</button>
         </div>
-        <div style="padding-top: 15px" onclick="checkElementsArray()">
+        <div id="checker" style="padding-top: 15px" onclick="checkElementsArray()">
                 <button>check</button>
+                <div id='checkDiv'><h3>Sum of data = 0</h3></div>
         </div>
         <script src="9.js"></script>
     </body>

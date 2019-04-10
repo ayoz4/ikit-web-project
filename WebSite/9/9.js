@@ -23,9 +23,12 @@ function addElement () {
     var classNameAttr = document.createAttribute('class');
     var nameAttr = document.createAttribute('name');
     var onClickAttr = document.createAttribute('onclick');
-    onClickAttr.value = `deleteElement(${upTheCounter() + 1})`;
+    const currentIndex = upTheCounter();
+
+    onClickAttr.value = `deleteElement(${currentIndex})`;
     classNameAttr.value = 'child';
-    nameAttr.value = `${upTheCounter()}`;
+    nameAttr.value = `${currentIndex}`;
+
     element.setAttributeNode(classNameAttr);
     element.setAttributeNode(onClickAttr);
     element.setAttributeNode(nameAttr);
@@ -35,11 +38,17 @@ function addElement () {
 
 function checkElementsArray () {
     var elements = document.getElementById('main').getElementsByClassName('child');
-    console.log(elements);
+    var checkElement = document.createElement('div');
+    var checker = document.getElementById('checker');
+    var checkDiv = document.getElementById('checkDiv');
+    console.log(checkDiv);
+    checker.remove(checkDiv);
+    checkElement.innerHTML = `<h3>Sum of data = ${elements.length}</h3>`;
+    checker.appendChild(checkElement);
 }
 
-var counter = 3;
+var counter = 0;
 
 function upTheCounter () {
-    return counter = counter + 1;
+    return counter++;
 }
