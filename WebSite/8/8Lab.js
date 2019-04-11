@@ -28,22 +28,23 @@ console.log(animal1.name);
 console.log(animal1.welcoming());
 
 // Расширение для Array
-Array.prototype.sumOfElements = (arr) => {
-    var array1 = [];
+Array.prototype.sumOfElements = function () {
+    //var array1 = [];
+    var sum = 0;
 
-    for (var i = 0; i < arr.length; i++) {
-        if (Number.isFinite(arr[i])) {
-            array1.push(arr[i]);
+    for (var i = 0; i < this.length; i++) {
+        if (Number.isFinite(this[i])) {
+            sum = sum + this[i];
         }
     }
-    console.log(array1);
+
+    console.log(sum);
     
-    var sum = 0;
-    for (var j = 0; j < array1.length; j++) {
+    /* for (var j = 0; j < array1.length; j++) {
         sum = sum + array1[j];
     }
-    console.log("Sum of elements = " + sum);
+    console.log("Sum of elements = " + sum);*/
 }
 
 var arr = [1, 2, 3, 4, 5, 'asd'];
-arr.sumOfElements(arr);
+arr.sumOfElements();
