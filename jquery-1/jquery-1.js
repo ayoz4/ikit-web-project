@@ -1,5 +1,6 @@
-$(document).ready(function() {
-    $('#id').click(function() {
-        $('#id').wrap( '<h1>Hello world!</h1>' );
-    });
+/* eslint-disable no-undef */
+$(document).ready(() => {
+  $('#id').click(() => {
+    $('#id').wrap('<h1>Hello world!</h1>');
+  });
 });
