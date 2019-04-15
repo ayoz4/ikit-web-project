@@ -3,41 +3,48 @@
 /* eslint-disable no-alert */
 /* eslint-disable func-names */
 /* eslint-disable no-undef */
+$(document).ready(function () {
+  $('#name').keyup(function () {
+    if ($(this).val() === '') {
+      $('#pass, #confirmPass').attr('disabled', 'disabled');
+    } else {
+      $('#pass, #confirmPass').removeAttr('disabled');
+    }
+  });
 
-$('#name').keyup(function () {
-  if ($(this).val() === '') {
-    $('#pass, #confirmPass').attr('disabled', 'disabled');
-  } else {
-    $('#pass, #confirmPass').removeAttr('disabled');
-  }
-});
+  $('form').change(function () {
+    const colorR = Math.floor(Math.random() * 256);
+    const colorG = Math.floor(Math.random() * 256);
+    const colorB = Math.floor(Math.random() * 256);
 
-$('form').submit(function () {
-  const pass = $('#pass').val();
-  const confirmPass = $('#confirmPass').val();
+    $('#submitButton').css('color', `rgb(${colorR},${colorG},${colorB})`);
+  });
 
-  if (pass !== confirmPass) {
-    alert('Passwords do not match');
-    return false;
-  }
+  $('form').submit(function () {
+    const pass = $('#pass').val();
+    const confirmPass = $('#confirmPass').val();
 
-  if ($('#name').val() === '') {
-    alert('Please, enter the name');
-    return false;
-  }
-  if ($('#pass').val() === '') {
-    alert('Please, enter the password');
-    return false;
-  }
+    if (pass !== confirmPass) {
+      alert('Passwords do not match');
+      return false;
+    }
 
-  if ($('#selector').val() === 'Choose role') {
-    alert('Please, choose role');
-    return false;
-  }
+    if ($('#name').val() === '') {
+      alert('Please, enter the name');
+      return false;
+    }
+    if ($('#pass').val() === '') {
+      alert('Please, enter the password');
+      return false;
+    }
 
-  console.log($(this).serializeArray());
+    if ($('#selector').val() === 'Choose role') {
+      alert('Please, choose role');
+      return false;
+    }
 
-  $.post($(this).serializeArray());
+    console.log($(this).serializeArray());
 
-  alert('Successfully!');
+    alert('Successfully!');
+  });
 });

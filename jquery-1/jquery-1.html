@@ -7,15 +7,16 @@
   <body>
     <form>
       <div>
-        <input id="name" type="text" value="Ivan" name="name" />
+        Введите имя
+        <input id="name" type="text" name="name" />
       </div>
       <div>
         Введите пароль
-        <input type="password" id="pass" name="pass" />
+        <input type="password" id="pass" name="pass" disabled />
       </div>
       <div>
         Подтвердите пароль
-        <input type="password" id="confirmPass" />
+        <input type="password" id="confirmPass" disabled />
       </div>
       <div>
         <select name="role" id="selector">
@@ -26,11 +27,11 @@
       </div>
       <div>
         Choose your gender<br />
-        <input type="radio" name="gender" value="Male" />Male<Br />
+        <input type="radio" name="gender" value="Male" checked />Male<Br />
         <input type="radio" name="gender" value="Female" />Female<Br />
       </div>
       <div>
-        <input type="submit" />
+        <input type="submit" id="submitButton" />
       </div>
     </form>
 
