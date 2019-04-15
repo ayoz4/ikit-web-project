@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <link href="jquery-1.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form>
+      <div>
+        Введите имя
+        <input id="name" type="text" name="name" />
+      </div>
+      <div>
+        Введите пароль
+        <input type="password" id="pass" name="pass" disabled />
+      </div>
+      <div>
+        Подтвердите пароль
+        <input type="password" id="confirmPass" disabled />
+      </div>
+      <div>
+        <select name="role" id="selector">
+          <option>Choose role</option>
+          <option>User</option>
+          <option>Admin</option>
+        </select>
+      </div>
+      <div>
+        Choose your gender<br />
+        <input type="radio" name="gender" value="Male" checked />Male<Br />
+        <input type="radio" name="gender" value="Female" />Female<Br />
+      </div>
+      <div>
+        <input type="submit" id="submitButton" />
+      </div>
+    </form>
+
+    <script src="jquery-1.js"></script>
+  </body>
+</html>
