@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="../node_modules/jquery/dist/jquery.js"></script>
-        <link href="jquery-1.css">
-    </head>
-    <body>
-        <div id="id">
-            asd
-        </div>
+  <head>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <link href="jquery-1.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form>
+      <div>
+        <input id="name" type="text" value="Ivan" name="name" />
+      </div>
+      <div>
+        Введите пароль
+        <input type="password" id="pass" name="pass" />
+      </div>
+      <div>
+        Подтвердите пароль
+        <input type="password" id="confirmPass" />
+      </div>
+      <div>
+        <select name="role" id="selector">
+          <option>Choose role</option>
+          <option>User</option>
+          <option>Admin</option>
+        </select>
+      </div>
+      <div>
+        Choose your gender<br />
+        <input type="radio" name="gender" value="Male" />Male<Br />
+        <input type="radio" name="gender" value="Female" />Female<Br />
+      </div>
+      <div>
+        <input type="submit" />
+      </div>
+    </form>
 
-        <script src="jquery-1.js"></script>
-    </body>
+    <script src="jquery-1.js"></script>
+  </body>
 </html>
