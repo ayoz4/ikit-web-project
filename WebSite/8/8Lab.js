@@ -39,11 +39,6 @@ Array.prototype.sumOfElements = function () {
     }
 
     console.log(sum);
-    
-    /* for (var j = 0; j < array1.length; j++) {
-        sum = sum + array1[j];
-    }
-    console.log("Sum of elements = " + sum);*/
 }
 
 var arr = [1, 2, 3, 4, 5, 'asd'];
