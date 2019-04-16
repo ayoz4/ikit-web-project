@@ -1,3 +1,4 @@
+/* eslint-disable function-paren-newline */
 /* eslint-disable prefer-template */
 /* eslint-disable space-before-function-paren */
 /* eslint-disable eol-last */
@@ -31,7 +32,7 @@ $(document).ready(function() {
 
   $('#animate-section').click(function() {
     const elem = $(this);
-    
+
     if (elem.data('click') === 'oldEvent') {
       elem.data('click', 'newEvent');
       elem.animate(
