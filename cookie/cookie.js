@@ -25,7 +25,7 @@ function set_cookie ( name, value, expires_year, expires_month, expires_day, pat
 
 function delete_cookie ( cookie_name )
 {
-  var cookie_date = new Date ( );  //Ткущая дата и время
+  var cookie_date = new Date ( );
   cookie_date.setTime ( cookie_date.getTime() - 1 );
   document.cookie = cookie_name += "=; expires=" + cookie_date.toGMTString();
 }
@@ -52,23 +52,35 @@ function getCookies(){
 	return res;
 };
 
+var inputElem = document.getElementById('insert').value;
+
 function saveCookie() {
-    if (!get_cookie('username')) {
-        var username = document.getElementById('insert').value;
-        
-        if (username) {
-            set_cookie('username', username, 2020, 01, 01);
-            console.log(get_cookie('username'));
-            document.location.reload( );
-        } 
+    var username = get_cookie('username');
+
+    if (username) {
+        delete_cookie('username');
+        var current_date = new Date;
+        var cookie_year = current_date.getFullYear ( ) + 1;
+        var cookie_month = current_date.getMonth ( );
+        var cookie_day = current_date.getDate ( );
+        set_cookie('username', inputElem, cookie_year, cookie_month, cookie_day);
+        document.location.reload();
     } else {
-        var username = get_cookie('username');
-        document.write('Hi, ' + username + ' asd');
+        set_cookie('username', inputElem);
     }
 }
+
+var elem = document.getElementById('par');
 
 var btn = document.getElementById('btn');
 btn.addEventListener('click', saveCookie);
 
-var cObj = getCookies();
-console.log(cObj);
+document.addEventListener('DOMContentLoaded', function() {
+    if (get_cookie('username')) {
+        var username = get_cookie('username');
+        elem.innerHTML = `<h3>Your name is ${username}</h3>`;
+        console.log(get_cookie('username'));
+    };
+});
+
+console.log(getCookies());
